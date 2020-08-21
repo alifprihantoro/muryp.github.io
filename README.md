@@ -1,1 +1,0 @@
-# muryp.github.io
