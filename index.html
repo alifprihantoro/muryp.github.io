@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>halo</title>
+<style type="text/css" media="all">
+*{
+margin: 0;
+padding: 0;
+}
+
+
+
+
+
+
+*{
+        padding: 0;
+        margin: 0;
+      }
+bodym{
+  overflow-x: hidden;
+}
+/* hamburger menu */
+.menu-togle {
+  display:none;
+  flex-direction: column;
+  height:20px;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-togle input{
+  position: absolute;
+  width: 37px;
+  height:37px;
+  top: -4px;
+  left:-3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 7;
+}
+.menu-togle span{
+  display:block;
+  width:28px;
+  height:3px;
+  background-color: #fff;
+  border-top: 1px;
+  transition: 0.5s;
+}
+
+/* hamburger animation */
+.menu-togle span:nth-child(2) {
+transform-origin: 0 0;
+}
+.menu-togle span:nth-child(4) {
+transform-origin: 0 0;
+}
+.menu-togle input:checked ~ span:nth-child(2) {
+transform: rotate(45deg) translate(-1px, -2px);
+color:#fff;
+}
+.menu-togle input:checked~span:nth-child(3) {
+transform:scale(0);opacity: 0;
+}
+.menu-togle input:checked~span:nth-child(4) {
+transform: rotate(-45deg) translate(-1px, -1px);
+color:#fff;
+}
+
+/* navigasi */
+
+.menu-togle {
+  display: flex;
+}
+nav ul.slide {
+  transform: translateX(0);
+}
+
+
+/* navigasi terbang cuk*/
+#menukuh :hover{ background: red;transition: 1s;}
+#menukuh { width:10%!important ;
+display: flex;      position:fixed;
+top:0px;
+z-index:100;height:60px;
+} 
+
+#tag-menu { display:none; }
+#tag-menu:checked ~ div.jw-drawer { animation: slide-in 0.5s ease-in-out; animation-fill-mode: forwards;
+}
+.jw-drawer { position:fixed; left:-400px; background-color:#5b5bff; height:100%; z-index:1; width:360px; top:65px;animation: slide-out 0.5s ease;
+}
+
+.jw-drawer ul li { list-style:none; display: block;} 
+.jw-drawer ul li a { padding:10px 20px; text-decoration:none; display:block; color:#FFF; border-top:1px solid #0000a0; }
+.jw-drawer ul li a:hover{ background-color:rgba(0, 0, 0, 0.1); }
+.jw-drawer ul li a i { width:50px; height:35px; text-align:center; padding-top:15px; }
+
+
+.nano {
+  background: rgba(10, 0, 0, 0.1);
+  height: 70px;
+  width: 70px;
+}
+/* animasi */
+@keyframes slide-in { from {left: -400px;} to {left: 0;} } @keyframes slide-out { from {left: 0;} to {left: -400px;} }
+.content{ pading: 100px 0 0 250px; }
+.gn-scroller {overflow-y: scroll;height: 100%;}
+#follow-on-sidmar img{width: 13%;height: 30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+display: inline-block;
+cursor: pointer;
+top:100px;
+}
+
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color: #333;
+margin: 6px 0;
+transition: 0.4s;
+cursor: pointer;
+}
+
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+transform: rotate(45deg) translate(-8px, -8px) ;
+} */
+
+</style>
+</head>
+<body>
+<div class='content'>
+<div id='menukuh' class='menu-ogle'  >
+<input id='tag-menu'  class='container' type='checkbox'/>
+<label class="container"  for='tag-menu'>
+    <div class="nano menu-togle">
+    <input type="checkbox" class="togles" />
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+</label><div class='jw-drawer'><nav class='gn-scroller'>
+<ul>
+<li> <href="#">halo</a></li>
+<li> <href="#">halo</a></li>
+<li> <href="#">halo</a></li>
+<li> <href="#">halo</a></li>
+</ul>
+</nav> </div>  </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestias laborum debitis unde dolorum molestiae natus, ea sequi, sunt at ad cumque quo dolor repellendus reprehenderit est aliquid. Similique, consequuntur?</div>
+<div>Dolores sit repellendus odio laboriosam maiores molestias laborum corporis possimus magni, voluptatibus esse ratione autem cumque in suscipit aspernatur hic animi cum labore mollitia aperiam sapiente ex atque doloribus! Ex.</div>
+<div>Repellat doloribus mollitia provident nulla, quae delectus distinctio dicta deserunt fugiat minus enim reiciendis velit nam eum quisquam magni ratione dolores. Rem reprehenderit vero molestias corporis illum, laborum totam! Quasi!</div>
+<div>Quas at dignissimos, atque non quod dolorem, eveniet nulla porro enim dolorum tempora hic quo. Eius eos quas quos, ullam repellendus aut dolores, corporis reprehenderit qui, laborum dolorem totam soluta.</div>
+<div>Dolorem quod, accusamus culpa illum voluptatibus quis nulla labore veritatis consectetur quasi, saepe recusandae doloremque ullam dolores asperiores amet eius ea error adipisci. Sequi placeat, sed. Velit in excepturi asperiores!</div>
+<div>Ipsa quisquam harum facilis expedita sed, amet quasi ipsam culpa minima a explicabo totam cumque vel numquam eos rerum ea quam porro neque officia perspiciatis laborum. Quos deleniti, similique consequuntur?</div>
+<div>Tenetur omnis, porro at explicabo eaque neque a. Commodi soluta cupiditate, ut explicabo harum excepturi quisquam beatae, molestias fuga cum assumenda esse tenetur inventore, eius animi ducimus! Fugiat, officia, qui?</div>
+<div>Distinctio reprehenderit veritatis nemo natus eligendi vitae aut illum, unde qui velit! Illo officia nemo adipisci laudantium incidunt officiis voluptas cumque. Necessitatibus temporibus nulla sint voluptate quibusdam quisquam porro nihil.</div>
+<div>Nesciunt libero, doloremque qui debitis culpa temporibus pariatur sunt iure voluptas sed facilis consequuntur dolore rem ducimus veniam, ipsa aperiam animi tempora architecto obcaecati maiores expedita saepe adipisci consectetur! Commodi.</div>
+<div>Ratione perferendis et, quis quo doloremque explicabo nihil vel earum maxime assumenda, mollitia provident atque accusamus iure rerum. Ipsa rerum quaerat vitae explicabo dignissimos et doloremque corrupti, odio ratione aliquid.</div>
+<!-- <script>
+function myFunction(x) {
+x.classList.toggle("change");
+}
+</script> -->
+</body>
+</html>
